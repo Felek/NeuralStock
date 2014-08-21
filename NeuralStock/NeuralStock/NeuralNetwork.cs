@@ -3,50 +3,112 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using AForge.Neuro;
 using AForge.Neuro.Learning;
 
 namespace NeuralStock
 {
-    class NeuralNetwork
+    public class NeuralNetwork
     {
         private ActivationNetwork network;
         private BackPropagationLearning teacher;
+      //  private ResilientBackpropagationLearning teacher;
+        private double[][] input;
+        private double[][] output;
+        private double count;
 
         public NeuralNetwork()
         {
-            network = new ActivationNetwork(new SigmoidFunction(2), 2, 2, 1);
+            network = new ActivationNetwork(new BipolarSigmoidFunction(5), 13, 7, 1);
             teacher = new BackPropagationLearning(network);
+            teacher.LearningRate = 0.0001;
+            teacher.Momentum = 0;
         }
 
-        public void Teach()
+        public NeuralNetwork(int alpha, int hidden, double learning, double momentum)
         {
-            double[][] input = new double[4][] {
-                new double[] {0, 0}, new double[] {0, 1},
-                new double[] {1, 0}, new double[] {1, 1}
-            };
-            double[][] output = new double[4][] {
-                new double[] {0}, new double[] {1},
-                new double[] {1}, new double[] {0}
-            };
+            network = new ActivationNetwork(new BipolarSigmoidFunction(alpha), 13, hidden, 1);
+            teacher = new BackPropagationLearning(network);
+            teacher.LearningRate = learning;
+            teacher.Momentum = momentum;
+        }
 
+        public double Teach()
+        {
             bool needToStop = false;
+            int i = 0;
+
+            double error = 0;
 
             while (!needToStop)
             {
-                double error = teacher.RunEpoch(input, output);
+                i++;
+                error = teacher.RunEpoch(input, output);
                 // check error value to see if we need to stop
                 // ...
-                if (error < 0.01)
+                if ((i > 10000))
                 {
                     needToStop = true;
                 }
-            }  
+            }
+            return error;
+        }
+
+        public void PrepareData(string filename) 
+        {
+            filename = "../../../../Data/teaching.txt";                   //////ZMIENIC
+            List<string> list = new List<string>();
+            int argc, tests;
+            using (StreamReader sr = new StreamReader(filename))
+            {
+                while (!sr.EndOfStream)
+                {
+                    String line = sr.ReadLine();
+                    list.Add(line);
+                }
+            }
+            argc = list[0].Split(new char[]{'\t'}, StringSplitOptions.RemoveEmptyEntries).Length;
+            count = tests = list.Count;
+
+            input = new double[tests][];
+            output = new double[tests][];
+            for (int i = 0; i < tests; i++)
+            {
+                input[i] = new double[argc - 1];
+                output[i] = new double[1];
+            }
+            string[] bufor = list[0].Split(new char[]{'\t'}, StringSplitOptions.RemoveEmptyEntries);
+
+            for (int i = 0; i < tests; i++)
+            {
+                bufor = list[i].Split(new char[] { '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                for (int k = 0; k < argc - 1; k++)
+                {
+                    input[i][k] = Convert.ToDouble(bufor[k]);
+                }
+                output[i][0] = Convert.ToDouble(bufor[argc-1]);
+            }
         }
 
         public double[] Think(double[] input)
         {
             return network.Compute(input);
+        }
+
+        public double Test()
+        {
+            double neural_result;
+            double success_count = 0;
+
+            for (int i = 0; i < count; i++)
+            {
+                neural_result = network.Compute(input[i])[0];
+                neural_result = network.Output[0];
+                if ((neural_result < 0 && output[i][0] < 0) || (neural_result > 0 && output[i][0] > 0)) 
+                    success_count++;
+            }
+            return success_count / count;
         }
     }
 }

@@ -15,3 +15,16 @@ F:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Debug\AForge.Gene
 F:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Debug\AForge.xml
 F:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Debug\AForge.Math.xml
 F:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\obj\Debug\NeuralStock.Form1.resources
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Debug\NeuralStock.exe.config
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\obj\Debug\NeuralStock.exe
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\obj\Debug\NeuralStock.pdb
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Debug\NeuralStock.exe
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Debug\NeuralStock.pdb
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Debug\AForge.Neuro.dll
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Debug\AForge.Neuro.xml
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\obj\Debug\NeuralStock.Form1.resources
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\obj\Debug\NeuralStock.Properties.Resources.resources
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\obj\Debug\NeuralStock.csproj.GenerateResource.Cache
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\obj\Debug\NeuralStock.csprojResolveAssemblyReference.cache
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Debug\AForge.dll
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Debug\AForge.xml

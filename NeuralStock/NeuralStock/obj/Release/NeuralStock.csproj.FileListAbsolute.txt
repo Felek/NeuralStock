@@ -1,0 +1,12 @@
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Release\NeuralStock.exe.config
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Release\NeuralStock.exe
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Release\NeuralStock.pdb
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Release\AForge.Neuro.dll
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Release\AForge.Neuro.xml
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\obj\Release\NeuralStock.Form1.resources
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\obj\Release\NeuralStock.Properties.Resources.resources
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\obj\Release\NeuralStock.csproj.GenerateResource.Cache
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\obj\Release\NeuralStock.exe
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\obj\Release\NeuralStock.pdb
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Release\AForge.dll
+E:\GitHub Repositories\NeuralStock\NeuralStock\NeuralStock\bin\Release\AForge.xml

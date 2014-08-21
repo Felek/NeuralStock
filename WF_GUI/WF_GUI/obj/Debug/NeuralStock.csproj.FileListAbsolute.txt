@@ -1,0 +1,11 @@
+E:\GitHub Repositories\NeuralStock\WF_GUI\WF_GUI\obj\Debug\NeuralStock.csprojResolveAssemblyReference.cache
+E:\GitHub Repositories\NeuralStock\WF_GUI\WF_GUI\obj\Debug\WF_GUI.Form1.resources
+E:\GitHub Repositories\NeuralStock\WF_GUI\WF_GUI\obj\Debug\WF_GUI.Properties.Resources.resources
+E:\GitHub Repositories\NeuralStock\WF_GUI\WF_GUI\obj\Debug\NeuralStock.csproj.GenerateResource.Cache
+E:\GitHub Repositories\NeuralStock\WF_GUI\WF_GUI\obj\Debug\WF_GUI.exe
+E:\GitHub Repositories\NeuralStock\WF_GUI\WF_GUI\bin\Debug\WF_GUI.exe.config
+E:\GitHub Repositories\NeuralStock\WF_GUI\WF_GUI\bin\Debug\WF_GUI.exe
+E:\GitHub Repositories\NeuralStock\WF_GUI\WF_GUI\bin\Debug\WF_GUI.pdb
+E:\GitHub Repositories\NeuralStock\WF_GUI\WF_GUI\bin\Debug\AForge.dll
+E:\GitHub Repositories\NeuralStock\WF_GUI\WF_GUI\bin\Debug\AForge.Neuro.dll
+E:\GitHub Repositories\NeuralStock\WF_GUI\WF_GUI\obj\Debug\WF_GUI.pdb

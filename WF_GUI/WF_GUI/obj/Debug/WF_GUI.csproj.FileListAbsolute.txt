@@ -1,0 +1,12 @@
+c:\users\paweł\documents\visual studio 2013\Projects\WF_GUI\WF_GUI\bin\Debug\WF_GUI.exe.config
+c:\users\paweł\documents\visual studio 2013\Projects\WF_GUI\WF_GUI\bin\Debug\WF_GUI.exe
+c:\users\paweł\documents\visual studio 2013\Projects\WF_GUI\WF_GUI\bin\Debug\WF_GUI.pdb
+c:\users\paweł\documents\visual studio 2013\Projects\WF_GUI\WF_GUI\obj\Debug\WF_GUI.csprojResolveAssemblyReference.cache
+c:\users\paweł\documents\visual studio 2013\Projects\WF_GUI\WF_GUI\obj\Debug\WF_GUI.Form1.resources
+c:\users\paweł\documents\visual studio 2013\Projects\WF_GUI\WF_GUI\obj\Debug\WF_GUI.Properties.Resources.resources
+c:\users\paweł\documents\visual studio 2013\Projects\WF_GUI\WF_GUI\obj\Debug\WF_GUI.csproj.GenerateResource.Cache
+c:\users\paweł\documents\visual studio 2013\Projects\WF_GUI\WF_GUI\obj\Debug\WF_GUI.exe
+c:\users\paweł\documents\visual studio 2013\Projects\WF_GUI\WF_GUI\obj\Debug\WF_GUI.pdb
+E:\GitHub Repositories\NeuralStock\WF_GUI\WF_GUI\bin\Debug\WF_GUI.exe.config
+E:\GitHub Repositories\NeuralStock\WF_GUI\WF_GUI\obj\Debug\WF_GUI.exe
+E:\GitHub Repositories\NeuralStock\WF_GUI\WF_GUI\obj\Debug\WF_GUI.pdb
