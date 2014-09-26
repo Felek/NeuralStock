@@ -37,6 +37,7 @@ namespace WF_GUI
         {
             textBox14.Text = "Chwilka, sieć w trakcie nauki...";
             teachThread.Join();
+            label6.Text = network.Test().ToString();
             try
             {
                 double openWIG20 = (Convert.ToDouble(textBox1.Text) - 0) * (1 + 1) / (4000 - 0) - 1;

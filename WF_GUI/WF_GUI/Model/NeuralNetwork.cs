@@ -55,7 +55,8 @@ namespace WF_GUI.Model
 
         public void PrepareData(string filename = "")
         {
-            filename = "../../../../Data/teaching.txt";                   //////ZMIENIC
+            if (filename == "")
+                filename = "../../../../Data/teaching2.txt";                   //////ZMIENIC
             List<string> list = new List<string>();
             int argc, tests;
             using (StreamReader sr = new StreamReader(filename))
@@ -96,6 +97,7 @@ namespace WF_GUI.Model
 
         public double Test()
         {
+            PrepareData("../../../../Data/testing2.txt");
             double neural_result;
             double success_count = 0;
             for (int i = 0; i < count; i++)
@@ -103,7 +105,7 @@ namespace WF_GUI.Model
                 neural_result = network.Compute(input[i])[0];
                 neural_result = network.Output[0];
 
-                if ((neural_result < 0 && output[i][0] < 0) || (neural_result > 0 && output[i][0] > 0))
+                if ((neural_result < 0 && output[i][0] < 0) || (neural_result >= 0 && output[i][0] >= 0))
                     success_count++;
             }
             return success_count / count;
